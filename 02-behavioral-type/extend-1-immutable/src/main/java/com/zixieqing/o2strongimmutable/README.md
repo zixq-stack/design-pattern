@@ -13,7 +13,6 @@
 ```java
 String s = "紫邪情";
 String b = "紫邪情";
-  
 ```
 
 Java 虚拟机其实只会创建这样--个字符串的实例，而这两个 String 对象都在共享这个值。如果程序所处理的字符串有频繁的内容变化时，就不宜使用 String 类型，所以使用 `StringBuffer` 或`StringBuilder`
@@ -24,7 +23,6 @@ Java中还有` Integer、Float、Double、Byte、Long、Short、Boolean 和 Char
 Vector y = new Vector();
 v.addElement(new Long(100L));
 v.addElement(new Long(101L));
-
 ```
 
 这些封装类实际上都是强不变类，因为这些类都是 `final `修饰的，而且在对象被创建时它们所蕴含的值(也就是它们的状态)就确定了，即：私有化且根本没有向外提供修改内部值的方法
