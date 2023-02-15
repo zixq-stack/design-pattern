@@ -1,9 +1,9 @@
-package com.zixieqing.o7num;
+package com.zixieqing.o7enum;
 
 /**
  * <p>@description  : 该类功能  使用枚举来实现
  * </p>
- * <p>@package      : com.zixieqing.o7num</p>
+ * <p>@package      : com.zixieqing.o7enum</p>
  * <p>@author       : ZiXieqing</p>
  */
 

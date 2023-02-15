@@ -36,10 +36,10 @@ public class ApiTest {
     public void compositeFlyweightTest() {
         CompositeFlyweightFactory compositeFlyweightFactory = CompositeFlyweightFactory.getInstance();
         Flyweight simpleFlyweight_a = compositeFlyweightFactory.simpleFlyweightFactory("紫邪情");
-        Flyweight compisiteFlyweight = compositeFlyweightFactory.compositeFlyweightFactory("紫明轩");
+        Flyweight compositeFlyweight = compositeFlyweightFactory.compositeFlyweightFactory("紫明轩");
 
         simpleFlyweight_a.operation("ZiXieqing");
-        compisiteFlyweight.operation("ZiMingxuan");
+        compositeFlyweight.operation("ZiMingxuan");
 
         Flyweight simpleFlyweight_b = compositeFlyweightFactory.simpleFlyweightFactory("紫邪情");
         simpleFlyweight_b.operation("ZiXieqing");
