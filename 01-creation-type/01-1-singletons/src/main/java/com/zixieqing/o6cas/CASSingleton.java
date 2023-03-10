@@ -23,10 +23,9 @@ public class CASSingleton {
     public static CASSingleton getInstance() {
 
         /*
-            这里可以用for(;;)一样的
             缺点就在这里：CAS的忙等   从而造成：如果一直没有获取就会处于死循坏当中
          */
-        while (true) {
+        for (;;) {
             CAS_SINGLETON_INSTANCE = INSTANCE.get();
             if (null != CAS_SINGLETON_INSTANCE) return CAS_SINGLETON_INSTANCE;
         /*
